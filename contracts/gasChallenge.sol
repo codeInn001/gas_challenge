@@ -28,7 +28,7 @@ contract gasChallenge {
         // Cache the state variable and storing it in memory to prevent checking the length on every loop
         uint length = numbers.length;
 
-        // used a different for loop increment syntax with an unchecked box
+        // used a different for loop increment syntax with an unchecked block
         unchecked {
             for (uint i = 0; i < length; i+=1) {
                 numbers[i] = 0; //each element in numbers array becomes 0
